@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operators & Expressions</title>
+  </head>
+  <body>
+    <h1>OPERATORS & EXPRESSIONS</h1>
+    <h3>1. Add Two Numbers</h3>
+    <pre>
+        const AddTwoNumbers = (a,b) => {
+            return a+b;
+        };        
+    </pre>
+    <h3>2. Find if the conditions are obeyed or not?</h3>
+    <pre>
+        const Is_Valid = (a,b) => {
+            if(a<10 && a>b){
+              return true;
+            }
+            else {
+              return false;
+            }
+          };
+    </pre>
+    <h3>3. Check the conditons</h3>
+    <pre>
+        const Check = (A, B) => 
+        {
+          if(A%10 === 0 || B%10 === 0){
+          return true;
+          }
+          else{
+          return false;
+          }
+        };
+    </pre>
+    <h3>4. Find the first digit of a 4 digit number</h3>
+    <pre>
+        const First_Digit = (n) => {
+            let a = 0;
+            a = n/1000;
+            a = Math.floor(a);
+            return a;
+         };         
+    </pre>
+    <h3>5. Find the last digit of a 4 digit number</h3>
+    <pre>
+        const Last_Digit = (n) => {
+            let a = n%10;
+            return a;
+         };         
+    </pre>
+    <h3>6. Find the remainder</h3>
+    <pre>
+        const Find_the_remainder = (a,b) => {
+            var rem = b%a;
+            return rem;
+        };        
+    </pre>
+    <h3>7. Multipy two Numbers</h3>
+    <pre>
+        const Multiply_two_number = (a,b) => {
+            var prod = a*b;
+            return prod;
+        };        
+    </pre>
+    <h3>8. Marks Calculator</h3>
+    <pre>
+        const Sum = (A, B, C) => 
+        {
+         var sum = A+B+C;
+         return sum;
+        };
+
+        const Average = (A, B, C) => 
+        {
+         var sum = A+B+C;
+         return sum/3;
+        };
+    </pre>
+  </body>
+</html>
