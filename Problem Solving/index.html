@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem Solving</title>
+  </head>
+  <body>
+    <h1>Problem Solving</h1>
+    <h3>1. Find the Smaller Angle</h3>
+    <pre>
+        var Minimal_Angle = (h, m) => 
+        {
+              var hourAngle =  (30*h) + (0.5*m);
+              var minAngle = (6*m);
+              if(m===0 && h===12){
+                return 0;
+              }
+             if(hourAngle > minAngle){
+               return hourAngle - minAngle;
+             }
+             else{
+               return minAngle - hourAngle;
+             }
+        };
+    </pre>
+    <h3>2. Check whether the year is Leap year or not.</h3>
+    <pre>
+        var Check_Leap = (year) => 
+        {
+          if((year % 4===0) && (year % 100!==0) || (year % 400 === 0)){
+            return "Leap Year";
+          }
+          else{
+            return "Non Leap Year";
+          }
+          
+        
+        };
+    </pre>
+    <h3>3. Perfect Number Check.</h3>
+    <pre>
+        var Perfect_Check = (N) => 
+        {
+          var sum = 0;
+             for(let i = 0; i < N-1; i++){
+               if(N % i ===0){
+                 sum = sum + i;
+               }
+             } 
+             if(sum === N){
+               return "YES";
+             }
+             else{
+               return "NO";
+             }
+                
+        };
+    </pre>
+    <h3>4. Reverse a Number.</h3>
+    <pre>
+        var Reverse_Number = (N) => 
+        {
+          var count = 0;
+          var n = N + "", revNum = "";
+          for(let i = n.length-1; i >= 0; i--){
+            
+            revNum = revNum + n[i];
+          }
+          return parseFloat(revNum);// removes the leading zeros of the reversed number
+        
+        };
+    </pre>
+    <h3>5. Substring Check.</h3>
+    <pre>
+        var Substring_Check = (S1, S2) => 
+        {
+             var N = S2.length;
+             for(let  i = 0; i < S1.length; i++){
+               if(S1.substring(i,i+N) === S2){
+                 return "YES";
+               }
+             }
+             return "NO";
+        };
+    </pre>
+  </body>
+</html>
