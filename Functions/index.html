@@ -129,11 +129,37 @@
              console.log(`i am from ${data} and My batch is EA${batch}`)
           }
 
-          DisplayData(""PrepBytes"", FindSum(10, 9));
+          DisplayData("PrepBytes", FindSum(10, 9));
     </pre>
     <p>
       Output: <br />
       i am from Prepytes and My batch is EA19
+    </p>
+    <pre>
+          Guess the output
+
+         Abc();
+         const Abc = function(){
+         let value = 20;
+         console.log(value);
+         }
+    </pre>
+    <p>
+      Output: <br />
+      ReferenceError: Cannot access 'Abc' before initialization
+    </p>
+    <pre>
+      Guess the output
+
+      var a = 10;
+      (function (){
+          console.log(a);
+          var a = 20;
+      })();
+    </pre>
+    <p>
+      Output: <br />
+      undefined
     </p>
   </body>
 </html>
