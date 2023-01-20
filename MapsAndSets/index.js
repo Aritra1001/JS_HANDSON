@@ -11,29 +11,29 @@
 // var n = str.length;
 // removeDuplicate(str,n);
 
-function prCharWithFreq(s)
-{
+// function prCharWithFreq(s)
+// {
  
-  var d = new Map();
+//   var d = new Map();
  
-  s.split('').forEach(element => {
+//   s.split('').forEach(element => {
      
-        if(d.has(element))
-        {
-            d.set(element, d.get(element)+1);
-        }
-        else
-            d.set(element, 1);
-  });
+//         if(d.has(element))
+//         {
+//             d.set(element, d.get(element)+1);
+//         }
+//         else
+//             d.set(element, 1);
+//   });
  
-  s.split('').forEach(element => {
-    if(d.has(element) && d.get(element)!=0)
-    {
-      console.log( element + d.get(element) + " ");
-      d.set(element, 0);
-    }
-  });
-}
+//   s.split('').forEach(element => {
+//     if(d.has(element) && d.get(element)!=0)
+//     {
+//       console.log( element + d.get(element) + " ");
+//       d.set(element, 0);
+//     }
+//   });
+// }
 
-var s="abcadeecfb";
-prCharWithFreq(s);
+// var s="abcadeecfb";
+// prCharWithFreq(s);
